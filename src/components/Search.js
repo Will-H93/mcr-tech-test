@@ -2,26 +2,27 @@ import React, { useState } from "react";
 import "../styles/search.css";
 import getImages from "../requests/getImages";
 
-const Search = ({ setSearchResults }) => {
+
+const Search = ({ setResults }) => {
   const [value, setValue] = useState();
 
-  const handleSubmit = (event) => {
+  const handleSubmit = async (event) => {
     event.preventDefault();
-    setSearchResults(getImages(value))
-  }
+    setResults(await getImages(value));
+  };
 
   return (
     <>
-    <form className="search-form" onSubmit={handleSubmit}>
+      <form className="search-form" onSubmit={handleSubmit}>
         <input
           className="search-input"
           type="text"
           onChange={(e) => setValue(e.target.value)}
         />
-      <button className="search-button" type="submit">
-        Search
-      </button>
-    </form>
+        <button className="search-button" type="submit">
+          Search
+        </button>
+      </form>
     </>
   );
 };

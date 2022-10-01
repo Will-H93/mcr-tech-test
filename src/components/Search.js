@@ -1,3 +1,4 @@
+import PropTypes from "prop-types"
 import React, { useState } from "react";
 import "../styles/search.css";
 import getImages from "../requests/getImages";
@@ -26,5 +27,9 @@ const Search = ({ setResults }) => {
     </>
   );
 };
+
+Search.propTypes = {
+  setResults: PropTypes.func.isRequired
+}
 
 export default Search;

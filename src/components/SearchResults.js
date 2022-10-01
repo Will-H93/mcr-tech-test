@@ -1,3 +1,4 @@
+import PropTypes from "prop-types";
 import React from "react";
 
 const SearchResults = ({ results }) => {
@@ -7,11 +8,20 @@ const SearchResults = ({ results }) => {
     return (
       <>
         {results.map((image) => (
-          <img className="card-image" src={image} alt="spaceImage" />
+          <img
+            className="card-image"
+            src={image}
+            alt="spaceImage"
+            key={image}
+          />
         ))}
       </>
     );
   }
+};
+
+SearchResults.propTypes = {
+  results: PropTypes.arrayOf(PropTypes.string).isRequired,
 };
 
 export default SearchResults;

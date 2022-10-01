@@ -1,12 +1,13 @@
 import PropTypes from "prop-types";
 import React from "react";
+import "../styles/searchResults.css";
 
 const SearchResults = ({ results }) => {
   if (!results.length) {
     return <p>No results</p>;
   } else {
     return (
-      <>
+      <div className="results">
         {results.map((image) => (
           <img
             className="card-image"
@@ -15,7 +16,7 @@ const SearchResults = ({ results }) => {
             key={image}
           />
         ))}
-      </>
+      </div>
     );
   }
 };

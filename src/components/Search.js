@@ -17,6 +17,7 @@ const Search = ({ setResults }) => {
       <form className="search-form" onSubmit={handleSubmit}>
         <input
           className="search-input"
+          placeholder="Enter Search Here"
           type="text"
           onChange={(e) => setValue(e.target.value)}
         />

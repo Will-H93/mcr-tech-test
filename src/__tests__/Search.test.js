@@ -7,7 +7,7 @@ describe("Search", () => {
     setResults: jest.fn(),
   };
 
-  const { asFragment } = render(<Search {...validProps}/>);
+  const { asFragment } = render(<Search {...validProps} />);
 
   test("renders correctly", () => {
     expect(asFragment()).toMatchSnapshot();

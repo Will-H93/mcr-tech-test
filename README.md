@@ -1,70 +1,65 @@
-# Getting Started with Create React App
+# NASA Space Search - React Developer Technical Task
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Task
 
-## Available Scripts
+I'm expected to build a React web application that allows users to search for images based on a query relating to space. I've been provided the NASA API endpoint for image search.
+They want me to consider and add anything to my repository that should be included was this to be a live website.
 
-In the project directory, you can run:
+The following functionalities need to be implemented:
+● A Search page which allows users to search for images by keyword
+● Images must be returned upon a successful search
 
-### `npm start`
+The styling is up to me but will be taken into consideration when evaluating your application.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+They estimate this task to take ​​10 hours​​. Once I have completed the task upload the repository to GitHub and send the link to xxxxx@xxx.com. ​Deadline: 5 days from receiving.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Relevant API endpoints:
 
-### `npm test`
+image search:
+GET​​ ​​https://images-api.nasa.gov/search ​Params: ​​q
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Assets
 
-### `npm run build`
+I may use this asset for my application: https://cdn.cnn.com/cnnnext/dam/assets/200424060716-nasa-worm-logo.jpg
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Screenshots
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Desktop
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+[Desktop](tech-test-desktop.JPG)
 
-### `npm run eject`
+### Mobile
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+[Mobile](tech-test-mobile.JPG)
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Technologies Used
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### Language
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- React (using `create-react-app`)
 
-## Learn More
+### Testing Utilities
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- Jest
+- React Testing Library
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Packages
 
-### Code Splitting
+- Axios
+- PropTypes
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Instructions
 
-### Analyzing the Bundle Size
+- Clone this repo and `cd` into it in your IDE
+- Run `npm install`
+- Run `npm start`
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## If I had more time
 
-### Making a Progressive Web App
+- Fix the search bar in place, so you don't need to scroll back up to make a new search
+- Amend the logo in photoshop to remove the white space
+- Test the getImages function with mock data.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## Author
 
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- Will Hodgkinson

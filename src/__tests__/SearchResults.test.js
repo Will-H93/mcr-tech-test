@@ -4,7 +4,7 @@ import SearchResults from "../components/SearchResults";
 
 describe("SearchResults", () => {
   const validProps = {
-    results: ["image"],
+    results: ["test-url-1", "test-url-2", "test-url-3"],
   };
 
   test("renders correctly", () => {
@@ -15,9 +15,11 @@ describe("SearchResults", () => {
 
   test("renders an image", () => {
     render(<SearchResults {...validProps} />);
-    const image = screen.getByRole("img");
+    const image = screen.getAllByRole("img");
 
-    expect(image).toHaveAttribute("src");
-    expect(image.src !== "").toBeTruthy();
+    image.forEach((image) => {
+      expect(image).toHaveAttribute("src");
+      expect(image.src !== "").toBeTruthy();
+    });
   });
 });

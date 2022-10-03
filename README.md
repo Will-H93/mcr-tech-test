@@ -26,11 +26,11 @@ I may use this asset for my application: https://cdn.cnn.com/cnnnext/dam/assets/
 
 ### Desktop
 
-![Desktop](tech-test-desktop.JPG)
+![Desktop](/public/tech-test-desktop.JPG)
 
 ### Mobile
 
-![Mobile](tech-test-mobile.JPG)
+![Mobile](/public/tech-test-mobile.JPG)
 
 ## Technologies Used
 

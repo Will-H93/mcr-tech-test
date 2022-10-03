@@ -1,13 +1,13 @@
 import PropTypes from "prop-types";
 import React from "react";
-import "../styles/searchResults.css";
+import "../styles/search-results.css";
 
 const SearchResults = ({ results }) => {
   if (!results.length) {
     return <p>No results</p>;
   } else {
     return (
-      <div className="results">
+      <div className="search-results">
         {results.map((image) => (
           <img
             className="card-image"
